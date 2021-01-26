@@ -325,10 +325,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacdaba0901e4664b9bc2ae0069a2005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  meshes:
+  - {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 1b61bd79b5350cc4da77d3395f05a7e7, type: 2}
-  maxDepth: 4
+  maxDepth: 5
   childScale: 0.5
+  spawnProbability: 0.7
+  maxRotationSpeed: 60
+  maxTwist: 30
 --- !u!4 &1789932727
 Transform:
   m_ObjectHideFlags: 0
