@@ -4,7 +4,8 @@
 
 float2 _Scale;
 
-void ConfigureProcedural () {
+void ConfigureProcedural ()
+{
 	#if defined(UNITY_PROCEDURAL_INSTANCING_ENABLED)
 		float3 position = _Positions[unity_InstanceID];
 
@@ -18,10 +19,12 @@ void ConfigureProcedural () {
 	#endif
 }
 
-void ShaderGraphFunction_float (float3 In, out float3 Out) {
+void ShaderGraphFunction_float (float3 In, out float3 Out)
+{
 	Out = In;
 }
 
-void ShaderGraphFunction_half (half3 In, out half3 Out) {
+void ShaderGraphFunction_half (half3 In, out half3 Out)
+{
 	Out = In;
 }

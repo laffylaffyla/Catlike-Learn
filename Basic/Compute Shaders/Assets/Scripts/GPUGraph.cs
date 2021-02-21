@@ -91,8 +91,7 @@ public class GPUGraph : MonoBehaviour
         computeShader.SetFloat(timeId, Time.time);
         if (transitioning)
         {
-			computeShader.SetFloat
-				(
+			computeShader.SetFloat(
 				transitionProgressId,
 				Mathf.SmoothStep(0f, 1f, duration / transitionDuration)
 				);
