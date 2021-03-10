@@ -9,7 +9,7 @@ public class MovingSphere : MonoBehaviour
 	float maxSpeed = 10f;
 
 	[SerializeField, Range(0f, 100f)]
-	float maxAcceleration = 10f;
+	float maxAcceleration = 10f, maxAirAcceleration = 1f;
 
 	[SerializeField, Range(0f, 10f)]
 	float jumpHeight = 2f;
@@ -46,7 +46,8 @@ public class MovingSphere : MonoBehaviour
     private void FixedUpdate()
     {
 		UpdateState();
-		float maxSpeedChange = maxAcceleration * Time.deltaTime;
+		float acceleraction = onGround ? maxAcceleration : maxAirAcceleration;
+		float maxSpeedChange = acceleraction * Time.deltaTime;
 		velocity.x =
 			Mathf.MoveTowards(velocity.x, desiredVelocity.x, maxSpeedChange);
 		velocity.z =
@@ -62,9 +63,13 @@ public class MovingSphere : MonoBehaviour
 
 	void Jump()
     {
-		if (onGround)
+		if (onGround || jumpPhase < maxAirJump)
 		{
-			velocity.y += Mathf.Sqrt(-2f * Physics.gravity.y * jumpHeight);
+			jumpPhase += 1;
+			float jumpSpeed = Mathf.Sqrt(-2f * Physics.gravity.y * jumpHeight);
+			if (velocity.y > 0f)
+				jumpSpeed = Mathf.Max(jumpSpeed - velocity.y, 0f);
+			velocity.y += jumpSpeed;
 		}
     }
 
