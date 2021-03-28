@@ -1,40 +1,40 @@
 {
-  "BurstVersion": "d4152694-e417-4e21-af29-a45a4de4e8f4",
+  "BurstVersion": "80e67f9b-c306-42df-aeca-94bb2959a2b6",
   "Assemblies": [
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2021-03-02T06:57:27.7737101Z"
+      "LastWriteTime": "2021-03-13T07:08:14.5401573Z"
     },
     {
       "FullName": "netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
-      "LastWriteTime": "2021-02-20T08:06:00Z"
+      "LastWriteTime": "2021-03-05T01:50:08Z"
     },
     {
       "FullName": "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-      "LastWriteTime": "2021-02-20T08:05:56Z"
+      "LastWriteTime": "2021-03-05T01:50:04Z"
     },
     {
       "FullName": "UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2021-02-20T08:19:40Z"
+      "LastWriteTime": "2021-03-05T02:00:12Z"
     },
     {
       "FullName": "Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2021-03-02T07:10:29.6808949Z"
+      "LastWriteTime": "2021-03-13T07:08:18.1126848Z"
     },
     {
       "FullName": "mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-      "LastWriteTime": "2021-02-20T08:05:56Z"
+      "LastWriteTime": "2021-03-05T01:50:04Z"
     },
     {
       "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2021-03-02T06:57:29.2332128Z"
+      "LastWriteTime": "2021-03-13T07:08:16.7213007Z"
     }
   ],
   "Functions": [
     {
       "FullName": "System.Int32 Unity.Burst.Intrinsics.X86::DoGetCSRTrampoline()",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "767448c7d27b09e004c71c335dd7584b",
+      "ModuleHash": "5af78dee0e771776fde4d275c9436dc5",
       "LinkName": "CDCA4A5193BE5947",
       "AssemblyDependencyIndices": [
         0,
@@ -45,7 +45,7 @@
     {
       "FullName": "System.Void Unity.Burst.Intrinsics.X86::DoSetCSRTrampoline(System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "649eeca29aa8f48cb856160467ff704e",
+      "ModuleHash": "e469e23ddda10cdc08fac7f2c8b5e1b4",
       "LinkName": "801E9A000BB37B05",
       "AssemblyDependencyIndices": [
         0,
@@ -56,7 +56,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobForExtensions/ForJobStruct`1<Fractal/UpdateFractalLevelJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 895788311580757587,
-      "ModuleHash": "112a56dc9402c68a3674cfa9aac53802",
+      "ModuleHash": "661da49f4bccb29eb71f0e3f31d3aca9",
       "LinkName": "EAF3933C01A43472",
       "AssemblyDependencyIndices": [
         3,
